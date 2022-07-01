@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitação de Documentos</title>
+    <style>
+        body {
+          background-color: rgb(178, 215, 249);
+        }
+        h1,
+        h2,
+        h4 {
+          text-align: center;
+        }
+  
+        .menu {
+          background-color: rgb(70, 85, 199);
+          height: 5;
+        }
+  
+        .menu ul li {
+          list-style: none;
+          display: inline;
+          font-size: 20pt;
+          padding: 2%;
+        }
+        .menu ul li a {
+          text-decoration: none;
+        }
+        .menu :hover {
+          text-decoration: solid;
+        }
+  
+        .fotos ul li {
+          list-style: none;
+          display: inline;
+          margin-left: 25px;
+        }
+        .fotos ul li img {
+          height: 370px;
+          width: 370px;
+        }
+        footer {
+          text-align: center;
+        }
+        .form-group {
+          font-size: 16pt;
+        }
+  
+        .form-group input {
+          width: 350px;
+        }
+        .form-check {
+          font-size: 14pt;
+        }
+        .form-check input {
+          width: 22px;
+          height: 22px;
+        }
+        .cadastro {
+          position: absolute;
+          margin-left: 35%;
+        }
+        p {
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <h1>E-vaga</h1>
+    <hr>
+    <div class="menu">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+        <li><a href="Documentos.html">Documentos</a></li>
+        <li><a href="Homologacao.html">Homologação</a></li>
+        <li><a href="transferencia.html">Transferência</a></li>
+        <li><a href="uniforme.html">Uniformes</a></li>
+        <li><a href="Vagas.html">Vagas</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+    
+        </ul>
+        </div>
+        <br>
+    <h2>Qual documento você deseja solicitar?</h2>
+    <h4>Lembrando que para retirar o documento é necessário que o responsável legal, compareça a instituição de ensino, na data e horário marcado e apresentar documento com foto.</h4>
+    <h4>Caso o responsável não compareça em um período de 24h, o mesmo deverá gerar outra solicitação.</h4>
+    <br>
+    <form action="/home" method="post">
+      <fieldset class="cadastro">
+        <div class="form-group">
+          <label for="exampleInputname">Nome Completo(Aluno)</label><br />
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputName"
+            aria-describedby="nameHelp"
+            placeholder="Nome Completo"
+            required
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="exampleInputname">Nome Completo Responsável Legal</label
+          ><br />
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputName"
+            aria-describedby="nameHelp"
+            placeholder="Nome Completo do Responsável"
+            required
+          />
+        </div>
+        <br />
+        <div class="form-group">
+          <label for="inputDate">Documento que deseja solicitar:</label><br />
+          <select id="inputGenero" class="form-control">
+            <option selected>Escolher...</option>
+            <option>Carteirinha escolar</option>
+            <option>Declaração Escolar</option>
+            <option>Histórico Escolar de Transferência</option>
+            <option>Histórico Escolar de Conclusão</option>
+          </select>
+        </div>
+        <br />
+        <button>Enviar</button>
+    
+</body>
+</html>

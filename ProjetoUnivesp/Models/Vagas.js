@@ -2,7 +2,7 @@ const mongoose=require('mongoose')
 
 
 
-const cadastro=mongoose.Schema({
+const vagas=mongoose.Schema({
     
     nameCompleto:{type:String,required:true},
     nameResponsavel:{type:String,required:true},
@@ -21,4 +21,4 @@ const cadastro=mongoose.Schema({
 {
     timestamps:true  
 })
-module.exports=mongoose.model('cadastro',cadastro)
+module.exports=mongoose.model('cadastro',vagas)

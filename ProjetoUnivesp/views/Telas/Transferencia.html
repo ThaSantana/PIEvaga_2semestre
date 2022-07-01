@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferência</title>
+    <style>
+        body {
+          background-color: rgb(178, 215, 249);
+        }
+        h1,
+        h2,
+        h4 {
+          text-align: center;
+        }
+  
+        .menu {
+          background-color: rgb(70, 85, 199);
+          height: 5;
+        }
+  
+        .menu ul li {
+          list-style: none;
+          display: inline;
+          font-size: 20pt;
+          padding: 2%;
+        }
+        .menu ul li a {
+          text-decoration: none;
+        }
+        .menu :hover {
+          text-decoration: solid;
+        }
+  
+        .fotos ul li {
+          list-style: none;
+          display: inline;
+          margin-left: 25px;
+        }
+        .fotos ul li img {
+          height: 370px;
+          width: 370px;
+        }
+        footer {
+          text-align: center;
+        }
+        .form-group {
+          font-size: 16pt;
+        }
+  
+        .form-group input {
+          width: 350px;
+        }
+        .form-check {
+          font-size: 14pt;
+        }
+        .form-check input {
+          width: 22px;
+          height: 22px;
+        }
+        .cadastro {
+          position: absolute;
+          margin-left: 35%;
+        }
+        p {
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <h1>E-vaga</h1>
+    <hr>
+<div class="menu">
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Documentos.html">Documentos</a></li>
+        <li><a href="Homologacao.html">Homologação</a></li>
+        <li><a href="transferencia.html">Transferência</a></li>
+        <li><a href="uniforme.html">Uniformes</a></li>
+        <li><a href="Vagas.html">Vagas</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+    </ul>
+    </div>
+    <br>
+    <h2>Solicitar Transferência</h2>
+    <h4>Informamos que a tranferência terá valor, somente após a assinatura do responsável legal na instituição de ensino.</h4>
+    <h4>Caso o responsável faça a solicitação e não compareceça ao colégio no dia e hora marcada, essa solicitação será descartada.</h4>
+    <h4>Para ter acesso a transferência, é necessário apresentar declaração de vaga da escola pretendida (exerto em outro estado) .</h4>
+    <br>
+    <form action="/home" method="post">
+        <fieldset class="cadastro">
+     <div class="form-group">
+        <label for="exampleInputname">Nome Completo(Aluno)</label><br>
+        <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Nome Completo" required>
+     </div> 
+     <br>
+        <div class="form-group">
+        <label for="exampleInputname">Nome Completo Responsável Legal</label><br>
+        <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Nome Completo do Responsável" required>
+     </div>  
+     <br>
+     <div class="form-group">
+        <label for="exampleInputPhone">Telefone</label><br>
+        <input type="text" class="form-control" id="exampleInputTelefone" aria-describedby="emailHelp" placeholder="Seu Telefone" required>
+      </div>
+      <br>
+    <div class="form-group">
+        <label for="exampleInputPhone">Telefone para Recado</label><br>
+        <input type="text" class="form-control" id="exampleInputTelefone" aria-describedby="emailHelp" placeholder="Telefone Recado" required>
+      </div> 
+      <br>
+      <div class="form-group">
+        <label for="inputEstado">Série/Ano em que o aluno estuda</label><br />
+        <select id="inputSerie" class="form-control">
+          <option selected>Escolher...</option>
+          <option>Berçário</option>
+          <option>Maternal I</option>
+          <option>Maternal II</option>
+          <option>Pré I</option>
+          <option>Pré II</option>
+          <option>1º Ano</option>
+          <option>2º Ano</option>
+          <option>3º Ano</option>
+          <option>4º Ano</option>
+          <option>5º Ano</option>
+          <option>6º Ano</option>
+          <option>7º Ano</option>
+          <option>8º Ano</option>
+          <option>9º Ano</option>
+          <option>1ª Série E.M</option>
+          <option>2ª Série E.M</option>
+          <option>3ª Serie E.M</option>
+        </select>
+      </div>
+      <br>
+      <button>Enviar</button>
+</body>
+</html>

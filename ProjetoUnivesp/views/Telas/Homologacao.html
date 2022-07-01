@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homologação</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+          background-color: rgb(178, 215, 249);
+        }
+        h1,
+        h2,
+        h4 {
+          text-align: center;
+        }
+  
+        .menu {
+          background-color: rgb(70, 85, 199);
+          height: 5;
+        }
+  
+        .menu ul li {
+          list-style: none;
+          display: inline;
+          font-size: 20pt;
+          padding: 2%;
+        }
+        .menu ul li a {
+          text-decoration: none;
+        }
+        .menu :hover {
+          text-decoration: solid;
+        }
+  
+        .fotos ul li {
+          list-style: none;
+          display: inline;
+          margin-left: 25px;
+        }
+        .fotos ul li img {
+          height: 370px;
+          width: 370px;
+        }
+        footer {
+          text-align: center;
+        }
+        .form-group {
+          font-size: 16pt;
+        }
+  
+        .form-group input {
+          width: 350px;
+        }
+        .form-check {
+          font-size: 14pt;
+        }
+        .form-check input {
+          width: 22px;
+          height: 22px;
+        }
+        .cadastro {
+          position: absolute;
+          margin-left: 35%;
+        }
+        p {
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <h1>E-vaga</h1>
+    <hr>
+    <div class="menu">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+        <li><a href="Documentos.html">Documentos</a></li>
+        <li><a href="Homologacao.html">Homologação</a></li>
+        <li><a href="transferencia.html">Transferência</a></li>
+        <li><a href="uniforme.html">Uniformes</a></li>
+        <li><a href="Vagas.html">Vagas</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        </ul>
+        </div>
+
+<h2>Bem Vindo ao setor de Homologação</h2>
+<p>Digite seus dados corretamente para que possa ser homologado no município.</p>
+<br />
+<form action="/home" method="post">
+    <fieldset class="cadastro">
+<div class="form-group">
+<label for="exampleInputname">Nome Completo</label><br>
+<input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Nome Completo do Aluno" required>
+</div> 
+<div class="form-group">
+<label for="exampleInputname">Nome Completo Responsável Legal</label><br>
+<input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Nome Completo do Responsável" required>
+</div>  
+<div class="form-group">
+<label for="exampleInputEndereco">Endereço Completo</label><br>
+<input type="text" class="form-control" id="exampleInputEndereco" aria-describedby="enderecoHelp" placeholder="Endereco" required>
+</div>
+<div class="form-group">
+<label for="inputCEP">CEP</label><br>
+<input type="text" class="form-control" id="exampleInputCep" aria-describedby="nameHelp" placeholder="Cep" required>
+</div>
+<div class="form-group">
+<label for="exampleInputBairro">Bairro</label><br>
+<input type="text" class="form-control" id="exampleInputBairro" aria-describedby="bairroHelp" placeholder="Bairro" required>
+</div>
+<div class="form-group">
+<label for="inputCity">Cidade</label><br>
+ <input type="text" class="form-control" id="exampleInputCity" aria-describedby="nameHelp" placeholder="CIDADE" required>
+</div>
+<div class="form-group">
+<label for="exampleInputEstado">Estado</label><br>
+<input type="text" class="form-control" id="exampleInputEstado" aria-describedby="estadoHelp" placeholder="Estado" required>
+</div>
+<div class="form-group">
+<label for="exampleInputPhone">Telefone</label><br>
+<input type="text" class="form-control" id="exampleInputTelefone" aria-describedby="emailHelp" placeholder="Seu Telefone" required>
+</div>
+<div class="form-group">
+<label for="exampleInputPhone">Telefone para Recado</label><br>
+<input type="text" class="form-control" id="exampleInputTelefone" aria-describedby="emailHelp" placeholder="Telefone Recado" required>
+</div> 
+<div class="form-group">
+<label for="exampleInputEmail1">Endereço de email</label><br>
+<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" required>
+
+</div>
+<br />
+<div class="form-group">
+<label for="exampleInputDate">Data de Nascimento</label><br>
+<input id="date" type="date" required>
+</div>
+<br />
+
+    <p>Envie um documento com foto ou certidão de Nascimento<br>(criança que não possui RG)</p>
+    <input type="file" />
+
+    <br>
+    <p>Envie em comprovante de residância atual(máximo últimos três meses).</p>
+    <p>Comprovantes válidos: <br>LUZ, ÁGUA, IPTU, CONTA DE TELEFONE,<br>CONTRATO DE ALUGUEL/COMPRA REGISTRADO EM CARTÓRIO <br>E CORRESPONDÊNCIA BANCÁRIA.</p>
+    <input type="file" />
+    <br />
+    <br />
+     <button>Enviar</button>
+    
+    <br><br />
+    <p><b>Informamos que todas as informações serão verificadas,<br> para que a homologação seja efetuada.</b></p>
+</fieldset>
+</form>
+</body>
+</html>

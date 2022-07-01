@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(178, 215, 249);
+}
+h1,h2{
+    text-align: center;
+}
+
+.menu{
+    background-color: rgb(70, 85, 199);
+    height: 5;
+}
+.menu ul li {
+    list-style: none;
+    display: inline;
+    font-size: 20pt;
+    padding: 2%;
+    
+}
+
+.fotos ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 25px;
+    
+   
+}
+.fotos ul li img{
+    height: 370px;
+    width: 370px;
+    
+
+}
+footer{
+    text-align: center;
+}
+.form-group{
+    font-size: 16pt;
+    
+}
+
+.form-group input{
+    width: 350px;
+}
+.form-check{
+    font-size: 14pt;
+}
+.form-check input{
+    width: 22px;
+    height: 22px;
+}
+.cadastro{
+    position: absolute;
+    margin-left: 35%;
+}
+p{
+    text-align: center;
+}
